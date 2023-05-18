@@ -12,7 +12,3 @@ void op_finder1(string str){
         }
     }
 }
-int main(){
-    op_finder1("2+12/2+2") ; 
-    cout << op1 << endl << op1_index <<endl ; 
-}
