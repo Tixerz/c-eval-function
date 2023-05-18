@@ -4,6 +4,6 @@
 4- we r going to apply the op on the numbers in another function
 5- we are going to get the index of the starting phrase and the index of the ending
 6- we r going to delete from the main string
-7- we r going to replace it with the the number we just calculate it
+7- we r going to replace it with the the number we just calculated it
 8- we t going to make a main loop which will run the application till there is no * or / symbols in our main string
 9- we r going to do all these stuff with + and -  symbols as well and put it in the same loop
