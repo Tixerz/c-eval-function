@@ -1,0 +1,9 @@
+1- we r going to to give a string to func like "2+12/2+2"
+2- the func should find the * or / symbols first and save its index and the symbol itself in "op" var
+3- we r going to save the left side and the right side numbers in 2 vars
+4- we r going to apply the op on the numbers in another function
+5- we are going to get the index of the starting phrase and the index of the ending
+6- we r going to delete from the main string
+7- we r going to replace it with the the number we just calculate it
+8- we t going to make a main loop which will run the application till there is no * or / symbols in our main string
+9- we r going to do all these stuff with + and -  symbols as well and put it in the same loop
