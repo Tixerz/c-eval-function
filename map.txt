@@ -1,5 +1,5 @@
 1- we r going to to give a string to func like "2+12/2+2"
-2- the func should find the * or / symbols first and save its index and the symbol itself in "op" var
+2- the func should find the * or / symbols first and save its index and the symbol itself in "op" var (done)
 3- we r going to save the left side and the right side numbers in 2 vars
 4- we r going to apply the op on the numbers in another function
 5- we are going to get the index of the starting phrase and the index of the ending
