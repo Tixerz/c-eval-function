@@ -1,4 +1,3 @@
-#include <iostream>
 int apply_op(int num1, int num2, char op) {
 	switch (op) {
 		case '*':
