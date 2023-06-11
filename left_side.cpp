@@ -18,3 +18,4 @@ int left_side( string str, int op_index){
     int num = stoi(output2) ;
     return num;
 }
+
