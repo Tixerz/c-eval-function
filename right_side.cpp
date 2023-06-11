@@ -1,4 +1,5 @@
 #include <iostream>
+#include<string>
 using namespace std;
 
 int right_side(string str , int op_index){
