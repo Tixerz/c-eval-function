@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
 using namespace std ; 
+int start1; 
 int left_side( string str, int op_index){
     string output1 ; 
     string output2 ; 
-    for(int i = op_index-1 ; i > 0 ; i--){
+    for(int i = op_index-1 ; i >= 0 ; i--){
         if (str[i] == '/' || str[i] == '*' || str[i] == '+' || str[i] == '-' ){
+            start1 = i;
             break ; 
         }
         output1 = output1 + str[i] ; 

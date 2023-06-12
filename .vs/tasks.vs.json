@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-op_finder1",
+      "appliesTo": "op-finder1/op_finder1.cpp",
+      "type": "launch"
+    }
+  ]
+}
