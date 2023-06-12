@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\right_side"
   ],
-  "SelectedNode": "\\CppProperties.json",
+  "SelectedNode": "\\right_side\\right_side.cpp",
   "PreviewInSolutionExplorer": false
 }

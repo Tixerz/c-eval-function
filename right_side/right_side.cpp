@@ -29,6 +29,6 @@ string right_side(string str, int op_index) {
 }
 int main() {
     int x;
-    cout << right_side("1+3*2+1", 3);
+    cout << right_side("1+3*-2-1", 3);
     cin >> x;
 }
