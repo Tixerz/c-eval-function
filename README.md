@@ -1,4 +1,4 @@
-# Ecal
+# Eval
 It takes a string containing mathematical expressions and calculates it and returns it to you. Note: This function calculates and replaces by observing the order of the expressions
 ---------------------------------------------
 example :
