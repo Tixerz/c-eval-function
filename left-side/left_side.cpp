@@ -1,35 +1,54 @@
 #include <iostream>
-#include <string>
-using namespace std ; 
-int start1; 
-int left_side(string str, int op_index) {
-    string output_real; 
-    int stop = 0; 
-    string output1;
-    string output2;
-    for (int i = op_index - 1; i >= 0; i--) {
-        if (str[i] == '/' || str[i] == '*' || str[i] == '+') {
-            start1 = i;
-            break;
-        }
-        output1 = output1 + str[i];
+#include <string> 
+using namespace std;
+int start1;
+string left_side(string str, int op_index) {
+	bool is_nagetive;
+	string output1;
+	string output2;
+	string output3;
+	string output4;
+	string minus = "-";
+	for (int i = op_index - 1; i < str.length(); i--) {
+		if (str[i] == '+' || str[i] == '*' || str[i] == '/' || i==0 ) {
+			start1 = i;
+			if (i == 0) {
+				output1 += str[0];
+			}
+			break;
 
-    }
-    //reverse the output
-    for (int i = output1.length() ; i >= 0; i--) {
-        output2 += output1[i];
-    }
-    for (int x = output2.length(); x >= 0; x--) {
-        if (output2[x] != '-') {
-            output_real.push_back(output2[x]);
-        }
-        if (output2[x] == '-') {
-            output_real.insert(0, "-");
-            break;
-        }
-    }
-    
-    int num = stoi(output_real);
-    return num;
+		}
+		output1 += str[i];
+	}
+
+	//reverse 
+	for (int y = output1.length() - 1; y >= 0; y--) {
+		output2 += output1[y];
+	}
+	for (int x = output2.length() - 1; x >= 0; x--) {
+		if (output2[x] == '-') {
+			is_nagetive = true;
+			break;
+		}
+		output3 += output2[x];
+	}
+
+	//start index 
+	cout << start1;
+	//reverse 
+	for (int a = output3.length() - 1; a >= 0; a--) {
+		output4 += output3[a];
+	}
+	if (is_nagetive == true) {
+		minus += output4;
+		return minus;
+	}
+	else {
+		return output4;
+	}
 }
-
+int main() {
+	cout << left_side("6+2*4", 3) << endl << start1;
+	int x; 
+	cin >> x; 
+}

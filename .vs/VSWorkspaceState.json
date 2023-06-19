@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\left-side"
+    "\\apply",
+    "\\left-side",
+    "\\replace",
+    "\\right_side"
   ],
-  "SelectedNode": "\\left-side\\left_side.cpp",
+  "SelectedNode": "\\main.cpp",
   "PreviewInSolutionExplorer": false
 }
