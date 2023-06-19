@@ -1,4 +1,8 @@
-# calculator
-the goal is making a function that works as the same as eval() function in python (it should calculates the int string we give as parameter . ) example : eval("2+12/2+2") -> 10
+# Ecal
+It takes a string containing mathematical expressions and calculates it and returns it to you. Note: This function calculates and replaces by observing the order of the expressions
+---------------------------------------------
+example :
+POT_eval("-3+2*7") --> 11
 
-note : after all the parts are finished, i make the functions in the parts available for the main file.
+===============================================
+to use the function run a.exe
