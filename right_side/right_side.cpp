@@ -34,6 +34,6 @@ int right_side(string str, int op_index) {
 }
 int main() {
     int x;
-    cout << right_side("1-3", 1);
+    cout << right_side("-2*-2", 2) << end1;
     cin >> x;
 }

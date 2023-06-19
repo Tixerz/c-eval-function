@@ -12,7 +12,7 @@
 using namespace std;
 
 
-string text1;
+string text1 = "-3*2";
 
 	
 string one_loop_dev(string str) { // its for / and *
@@ -58,7 +58,8 @@ string POT_eval(string str) {
 	}
 	///////////////////////////////////////////////////////
 	for (int i = 0; i <= str.length(); i++) {
-		if (str[i] == '+' || str[i] == '-') {
+		
+		if (str[i] == '+' || (str[i] == '-' && i != 0)) {
 			has_sum = true;
 			break;
 		}
@@ -89,7 +90,7 @@ int main() { // end1 should always be +1
 
 	
 	cout << "Enter the mathematical expression u want:";
-	cin >> text1;
+	//cin >> text1;
 	cout << endl << "---------------------" << endl << POT_eval(text1);
 	cin >> text1;
 

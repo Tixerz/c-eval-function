@@ -17,5 +17,10 @@ string apply_op(int num1, int num2, char op) {
 		break;
 
 	}
-	re
+	return "";
+}
+int main() {
+	cout << apply_op(-2, -3, '*'); 
+	int x; 
+	cin >> x; 
 }
