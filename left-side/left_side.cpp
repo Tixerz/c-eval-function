@@ -2,9 +2,9 @@
 #include <string> 
 using namespace std;
 int start1;
-
 int left_side(string str, int op_index) {
-
+	start1 = 0;
+	bool is_nagetive;
 	string output1;
 	string output2;
 	string output3;
@@ -51,7 +51,7 @@ int left_side(string str, int op_index) {
 }
 
 int main() {
-	cout << left_side("-2*4", 2) << start1  ;
-	int x = left_side("-2*4", 2);
-	cin >> x ; 
+	cout << left_side("1+1+2",3) << "start : " << start1;
+	int x; 
+	cin >> x;
 }

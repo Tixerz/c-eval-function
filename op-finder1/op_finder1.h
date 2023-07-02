@@ -10,6 +10,7 @@ void op_finder1(string str) {
         if (str[i] == '/' || str[i] == '*') {
             op1 = str[i];
             op1_index = i;
+            break;
         }
     }
     

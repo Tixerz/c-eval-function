@@ -3,6 +3,7 @@
 using namespace std;
 int start1;
 int left_side(string str, int op_index) {
+	start1 = 0;
 	bool is_nagetive;
 	string output1;
 	string output2;

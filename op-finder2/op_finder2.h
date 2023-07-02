@@ -8,6 +8,7 @@ void op_finder2(string str) {
         if (str[i] == '+' || str[i] == '-') {
             op2 = str[i];
             op2_index = i;
+            break;
         }
     }
 }

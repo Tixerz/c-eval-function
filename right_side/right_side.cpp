@@ -2,38 +2,23 @@
 #include<string>
 using namespace std;
 int end1;
-int right_side(string str, int op_index) {
-    int minus1=0;
-    string output_real;
-    string output;
-    for (int i = op_index + 1; i <= str.length()-1; i++) {
-        if (str[i] == '/' || str[i] == '*' || str[i] == '+' || i == str.length()-1) {
-            end1 = i;
-            if (i == str.length()-1) {
-                
-                output += str[i];
-                end1 = i;
-            }
+int right_side(string str , int op_index) { // "- + * /"
+    string output; 
+    bool has_minus;
+    for (int i = op_index+1; i <= str.length() - 1; i++) {
+        if (str[i] == '+' || str[i] == '*' || str[i] == '/' || (str[i] == '-' && i != op_index+1 )) {
+
             break;
-
         }
-        output += str[i];
-
-    } // -2-1
-    for (int x = 0; x <= output.length() - 1; x++) {
-        if (output[x] == '-') {
-            minus1 += 1;
-
-        }
-        if (minus1 <= 1) {
-            output_real.push_back(output[x]);
-        }
+        
+        end1 = i; 
+        output.push_back(str[i]);
     }
- 
-    return stoi(output_real);
+    return stoi(output); 
 }
 int main() {
     int x;
-    cout << right_side("-2*-2", 2) << end1;
+    cout << endl << right_side("1*9-3-4-5-6", 1) << "\nend:" << end1;
     cin >> x;
 }
+//"1*-3333-4"

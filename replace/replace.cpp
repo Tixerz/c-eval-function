@@ -8,6 +8,6 @@ string replace(int start_index , int end_index , string the_main_item , string n
 }
 int main() {
 	int x;
-	cout << replace(0, 5, "-2*-3", "-6");
+	cout << replace(1, 5, "1-2*-3+487263487", "-6");
 	cin >> x; 
 }
