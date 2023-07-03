@@ -5,4 +5,4 @@ example :
 POT_eval("-3+2*7") --> 11
 
 ===============================================
-to use the function run a.exe
+to use the function import POT.eval.h
