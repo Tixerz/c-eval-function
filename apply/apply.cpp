@@ -20,7 +20,7 @@ string apply_op(int num1, int num2, char op) {
 	return "";
 }
 int main() {
-	cout << apply_op(-2, -3, '*'); 
+	cout << apply_op(-12, 2, '/'); 
 	int x; 
 	cin >> x; 
 }

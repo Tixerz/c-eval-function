@@ -18,7 +18,7 @@ int right_side(string str , int op_index) { // "- + * /"
 }
 int main() {
     int x;
-    cout << endl << right_side("1*9-3-4-5-6", 1) << "\nend:" << end1;
+    cout << endl << right_side("1-2", 1) << "\nend:" << end1;
     cin >> x;
 }
 //"1*-3333-4"

@@ -1,51 +1,39 @@
 #include <iostream>
 #include <string> 
 using namespace std;
-int start1;
+int start1;//"1-12/-2"
 int left_side(string str, int op_index) {
-	start1 = 0;
-	bool is_nagetive;
-	string output1;
-	string output2;
-	string output3;
-	string output4;
+	bool is_neg;
 	string minus = "-";
-	for (int i = op_index - 1; i <= str.length(); i--) {
-		if (str[i] == '+' || str[i] == '*' || str[i] == '/' || i == 0) {
-			start1 = i + 1;
-			if (i == 0) {
-				output1 += str[0];
-				start1 = 0;
+	string output;
+	string final_output;
+	for (int i = op_index-1; i >= 0; i--) {
+		if (str[i] == '+' || str[i] == '/' || str[i] == '*' || str[i] == '-') {
+			if (str[i] == '-') {
+				is_neg = true;
+			}
+			else {
+				is_neg = false;
 			}
 			break;
-
 		}
-		output1 += str[i];
-	}
+		start1 = i;
+		output.push_back(str[i]); //21-
 
-	//reverse 
-	for (int y = output1.length() - 1; y >= 0; y--) {
-		output2 += output1[y];
-	}
-	for (int x = output2.length() - 1; x >= 0; x--) {
-		if (output2[start1 - 1] == '-') {
-			is_nagetive = true;
-			break;
-		}
-		output3 += output2[x];
-	}
 
-	//start index 
-	//cout << start1;
-	//reverse 
-	for (int a = output3.length() - 1; a >= 0; a--) {
-		output4 += output3[a];
 	}
-	if (is_nagetive == true) {
-		minus += output4;
+	for (int i = output.length() - 1; i >= 0; i--) {
+		final_output.push_back(output[i]);
+	}
+	if (is_neg) {
+		start1 -= 1;
+
+		minus += final_output;
+
 		return stoi(minus);
 	}
 	else {
-		return stoi(output4);
+		return stoi(final_output);
 	}
+
 }
