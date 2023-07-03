@@ -12,18 +12,18 @@
 using namespace std;
 
 
-string text1 ;
+string text1;
 
-	
+
 string one_loop_dev(string str) { // its for / and *
 	op_finder1(str);
-	str = replace(start1, end1+1, str, apply_op(left_side(str, op1_index), right_side(str, op1_index), op1));
+	str = replace(start1, end1 + 1, str, apply_op(left_side(str, op1_index), right_side(str, op1_index), op1));
 	//cout << "str:" << str << "start :" << start1 << "end :" << end1;
 	return str;
 }
 string one_loop_sum(string str) {
 	op_finder2(str);
-	str = replace(start1, end1 +1, str, apply_op(left_side(str, op2_index), right_side(str, op2_index), op2));
+	str = replace(start1, end1 + 1, str, apply_op(left_side(str, op2_index), right_side(str, op2_index), op2));
 	//cout << "str:" << str << "start :" << start1 << "end :" << end1;
 	return str;
 }
@@ -32,8 +32,8 @@ string one_loop_sum(string str) {
 
 
 string POT_eval(string str) {
-	bool has_dev = true;
-	bool has_sum = true;
+	bool has_dev;
+	bool has_sum;
 	for (int i = 0; i <= str.length(); i++) {
 		if (str[i] == '/' || str[i] == '*') {
 			has_dev = true;
@@ -78,7 +78,7 @@ string POT_eval(string str) {
 
 		for (int i = 0; i <= str.length(); i++) {
 
-			if (str[i] == '+' || (str[i] == '-' && i != 1 ) ) {
+			if (str[i] == '+' || (str[i] == '-' && i != 0)) {
 
 				has_sum = true;
 
