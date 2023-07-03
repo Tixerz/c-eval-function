@@ -31,7 +31,7 @@ string one_loop_sum(string str) {
 
 
 
-string POT_eval(string str) {
+int POT_eval(string str) {
 	bool has_dev;
 	bool has_sum;
 	for (int i = 0; i <= str.length(); i++) {
@@ -89,5 +89,5 @@ string POT_eval(string str) {
 			}
 		}
 	}
-	return str;
+	return stoi(str);
 }
