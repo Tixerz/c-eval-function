@@ -98,7 +98,9 @@ int main() { // end1 should always be +1
 		cin >> text1;
 		cout << endl << "---------------------" << endl << "output:" << POT_eval(text1) << endl;
 
-		cin >> text1;
+		text1 = ""; 
+
+
 	}
 }
 
